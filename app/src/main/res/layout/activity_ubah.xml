@@ -5,41 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UbahActivity"
+    android:padding="6dp"
+    android:background="@drawable/bg2"
     android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add Player Data"
+            android:textColor="@color/white"
+            android:background="#25316D"
             android:textStyle="bold"
             android:textSize="25sp"
             android:layout_gravity="center_horizontal"
-            android:gravity="center_horizontal"/>
-        <EditText
+            android:gravity="center_horizontal" />
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+                android:src="@drawable/logobg"
+            android:layout_marginTop="10dp"
+                android:background="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
             android:hint="Player Name"
             android:id="@+id/et_nama"
-            android:textSize="21sp"/>
+            android:textSize="21sp"
+            android:background="@drawable/bg_corner"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/baseline_person_add"
+            app:tint = "@null"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"
+            />
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Jersey Number"
             android:id="@+id/et_nomor"
-            android:textSize="21sp"/>
+            android:textSize="21sp"
+            android:background="@drawable/bg_corner"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/baseline_checkroom"
+            app:tint = "@null"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"/>
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="Club"
             android:id="@+id/et_club"
-            android:textSize="21sp"/>
+            android:textSize="21sp"
+            android:background="@drawable/bg_corner"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/baseline_currency_yen"
+            app:tint = "@null"
+            android:drawableTint="@color/white"
+            android:drawablePadding="5dp"/>
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btn_simpan"
             android:layout_marginTop="24dp"
             android:text="Ubah"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#25316D"
             app:cornerRadius="24dp"
             android:textSize="21sp"/>
 

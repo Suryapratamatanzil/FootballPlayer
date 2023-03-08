@@ -5,43 +5,76 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="6dp"
+    android:padding="6dp"
     android:background="@drawable/bg2"
     tools:context=".TambahActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add Player Data"
+        android:background="#25316D"
         android:textStyle="bold"
         android:textSize="25sp"
+        android:textColor="@color/white"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"/>
-    <EditText
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:src="@drawable/logobg"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_corner"
         android:hint="Player Name"
+        android:drawableStart="@drawable/baseline_person_add"
+        app:tint = "@null"
+        android:drawableTint="@color/white"
+        android:drawablePadding="5dp"
+        android:paddingStart="16dp"
+        android:textColor="@color/white"
         android:id="@+id/et_nama"
+        android:layout_marginTop="10dp"
         android:textSize="21sp"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Jersey Number"
+        android:background="@drawable/bg_corner"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:paddingStart="16dp"
         android:id="@+id/et_nomor"
-        android:textSize="21sp"/>
+        android:textSize="21sp"
+        android:drawableStart="@drawable/baseline_checkroom"
+        app:tint = "@null"
+        android:drawableTint="@color/white"
+        android:drawablePadding="5dp"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Club"
+        android:background="@drawable/bg_corner"
+        android:textColor="@color/white"
+        android:paddingStart="16dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/et_club"
-        android:textSize="21sp"/>
+        android:textSize="21sp"
+        android:drawableStart="@drawable/baseline_currency_yen"
+        app:tint = "@null"
+        android:drawableTint="@color/white"
+        android:drawablePadding="5dp"/>
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_simpan"
         android:layout_marginTop="24dp"
         android:text="Save"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#25316D"
         app:cornerRadius="24dp"
         android:textSize="21sp"/>
 

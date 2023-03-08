@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="6dp"
+    android:padding="6dp"
     tools:context=".MainActivity"
     android:background="@drawable/bg1">
 
@@ -20,8 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
-        android:layout_alignBottom="@id/rv_item"
-        android:layout_alignRight="@id/rv_item"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         android:src="@drawable/baseline_add"
         app:tint="@null"/>
 
