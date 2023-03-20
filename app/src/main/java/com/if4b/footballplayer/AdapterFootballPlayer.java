@@ -3,6 +3,7 @@ package com.if4b.footballplayer;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -65,12 +66,18 @@ public class AdapterFootballPlayer extends  RecyclerView.Adapter<AdapterFootball
                 public boolean onLongClick(View v) {
                     AlertDialog.Builder pesan = new AlertDialog.Builder(ctx);
                     pesan.setTitle("Perhatian");
-                    pesan.setMessage("Anda Memilih "+ tvNama.getText().toString() + " Pilih Perintah yang Anda inginkan?");
+                    pesan.setMessage("Anda Memilih "+ tvNama.getText().toString() +
+                            " Pilih Perintah yang Anda inginkan?");
                     pesan.setCancelable(true);
                     pesan.setPositiveButton("Ubah ", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
-
+                            Intent intent = new Intent(ctx, UbahActivity.class);
+                            intent.putExtra("varId", tvID.getText().toString());
+                            intent.putExtra("varNama", tvNama.getText().toString());
+                            intent.putExtra("varNomor", tvNomor.getText().toString());
+                            intent.putExtra("varKlub", tvKlub.getText().toString());
+                            ctx.startActivity(intent);
                         }
                     });
 
